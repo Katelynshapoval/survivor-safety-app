@@ -1,50 +1,42 @@
-# Welcome to your Expo app 👋
+# Tempo
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Contest prototype of a discreet support app that looks like a cat weather app. It uses fictional data only and is **not** an operational safety or emergency service. In an emergency in Spain, call 112.
 
-## Get started
+**Status:** project base only. No features are built yet.
 
-1. Install dependencies
+## Run it locally
 
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+You need [Node.js](https://nodejs.org) installed.
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+```bash
+npm run dev
+```
 
-## Learn more
+Then open the link it prints.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Commands
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+| Command | What it does |
+|---|---|
+| `npm run dev` | Runs the app locally and reloads as you edit |
+| `npm run build` | Creates the production version in `dist/` |
+| `npm run preview` | Runs the production version locally |
+| `npm run deploy` | Builds and publishes to Cloudflare (see `docs/DEPLOY.md`) |
 
-## Join the community
+## Where things are
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+| Path | Contents |
+|---|---|
+| `src/` | The app |
+| `public/` | Files copied as they are, including security headers (`_headers`) and `robots.txt` |
+| `wrangler.jsonc` | Cloudflare settings |
+| `docs/Tempo_Project_Specification.md` | Product spec, the source of truth |
+| `docs/Tempo_Overview.md` | Plain-language overview |
+| `docs/TECH_STACK.md` | Tools and why they were chosen |
+| `docs/ROADMAP.md` | Build order and status |
+| `docs/DEPLOY.md` | Publishing the app and making the QR code |
+| `AGENTS.md` | Rules for anyone (or any AI) working on the code |

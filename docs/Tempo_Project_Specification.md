@@ -68,6 +68,8 @@ Tempo (formerly **NEXO**) is a contest-stage concept for a discreet support app 
 - **Support for anyone:** the Oficinas de Asistencia a las Víctimas del Delito (OAVD) added alongside 112, 016 and the AEPD.
 - **Smaller additions:** working weather tabs (Semana, Michis), an empty first-day home, help card editing and full-screen view, a safety-plan summary view and rights topics with their own pages.
 
+**Decided on the build (6 November 2026):** the prototype is a frontend-only React + Vite web app hosted on Cloudflare, so judges can scan a QR code and try it on their own phones, with a local copy as a fallback. There are no accounts, no server code and no database; fictional data stays in each judge's browser. This extends the "local/localhost" wording in the project status and §1.1 to a **public link serving only fictional data**. **Open:** check that the contest rules allow a hosted demo. See `TECH_STACK.md`.
+
 **Designed, not yet built:** the **"Modo presentación"** switch (§5.19) and the **redaction preview** screen (§5.4). Both are needed to match the brief and must be built and tested in the prototype.
 
 **Explicit unresolved conflicts with the original brief:**

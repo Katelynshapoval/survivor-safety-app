@@ -1,0 +1,8 @@
+# Applies to every static file. Enforces in the browser what the spec promises:
+# the only outside service the app can contact is the Open-Meteo forecast API.
+/*
+  Content-Security-Policy: default-src 'self'; connect-src 'self' https://api.open-meteo.com; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
+  Referrer-Policy: no-referrer
+  X-Content-Type-Options: nosniff
+  X-Robots-Tag: noindex, nofollow

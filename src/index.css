@@ -1,0 +1,6 @@
+/* Global styles. Brand colours and the Atkinson Hyperlegible font come with the first feature step in docs/ROADMAP.md. */
+body {
+  margin: 0;
+  padding: 16px;
+  font-family: system-ui, sans-serif;
+}
